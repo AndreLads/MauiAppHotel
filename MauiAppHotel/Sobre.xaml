@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Sobre"
+             Title="Sobre"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#2c3e50">
+
+    <VerticalStackLayout Padding="10" Spacing="10">
+
+        <Image
+            Source="lads_hotel.png"
+            HeightRequest="150"
+            Aspect="AspectFit"
+            SemanticProperties.Description="Logo do Aplicativo Lads Hotel"/>
+        <Frame>
+            <VerticalStackLayout>
+                <Label
+                    Text="Sobre:"
+                    HorizontalOptions="Center"
+                    FontFamily="Parisienne"
+                    FontSize="20"
+                    TextColor="{StaticResource Primary}"
+                    FontAttributes="Bold"/>
+
+                <Label
+                    Text="Detalhes do Aplicativo:"
+                    FontFamily="Parisienne"
+                    FontSize="20"
+                    TextColor="{StaticResource Primary}"/>
+
+                <Label HorizontalOptions="StartAndExpand"
+                 Text="Desenvolvedor: André Lads
+                       Inauguração: 2026
+                       Categoria: Hospedagem
+                       Endereço: Rua Hipólito
+                       Número: 777
+                       Bairro: Imaginário
+                       Cidade: Tatuapé"
+                 FontFamily="Parisienne"
+                 FontSize="20"
+                 TextColor="Black"/>
+
+            </VerticalStackLayout>
+        </Frame>
+
+        <Button
+            Padding="5"
+            Margin="10"
+            Text="Voltar"
+            FontFamily="Kalam"
+            FontSize="20"
+            TextColor= "White"
+            HorizontalOptions="Start"
+            Clicked="Button_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>
